@@ -1,0 +1,38 @@
+.resume-old-game-modal {
+  background: white;
+  padding: 20px;
+  max-width: 400px;
+width: 40vmax;
+  border-radius: 26px;
+  text-align: center;
+
+  p {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 17px;
+
+    & svg {
+      width: 19px;
+      height: 15px;
+      vertical-align: middle;
+      margin-top: -3px;
+    }
+  }
+
+  .btn {
+    padding: 10px 15px;
+    width: unset;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  & .timeleft {
+    text-align: center;
+    & p {
+      font-size: 2.2rem;
+    }
+  }
+}

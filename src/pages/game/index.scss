@@ -1,0 +1,21 @@
+.gameContainer {
+  display: flex;
+  flex: 1;
+  position: relative;
+  flex-direction: column;
+  max-height: calc(100%);
+  @media (max-width: 526px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.gameWrapper {
+  // max-height: calc(100% - 80px);
+  max-height: 100% !important;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}

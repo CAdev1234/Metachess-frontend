@@ -1,0 +1,66 @@
+.borderedGameButton {
+  width: 340px;
+  height: 340px;
+  background-repeat: no-repeat;
+  background: url("./assets/images/warfront/bordergame.png");
+  background-size: 100% 100%;
+  border: none !important;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    font-family: Solway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #fbb040;
+  }
+  .subtitle {
+    font-family: Solway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #fbb040;
+    + .coming-soon {
+      margin: 25px 0 35px;
+    }
+  }
+  button {
+    background: url("./assets/images/warfront/playbutton.png");
+    background-size: 142px 52px;
+    width: 142px;
+    height: 52px;
+    margin-bottom: 27px;
+    border-radius: 15px;
+    font-family: Solway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 22px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .coming-soon {
+    margin: 20px 0 50px;
+    font-family: Solway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.42);
+  }
+}

@@ -1,0 +1,33 @@
+.alertWarning{
+    position: relative;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.568);
+    z-index: 2222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.alertWarning__container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.alertWarning__close{
+
+}
+
+.alertWarning__buttons{
+
+}
+
+.alertWarning__container{
+
+}

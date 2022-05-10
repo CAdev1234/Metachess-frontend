@@ -1,0 +1,215 @@
+.playTournamentContainer {
+  display: flex;
+  flex: 1;
+  position: relative;
+  flex-direction: column;
+  width: 1260px;
+  overflow-x: hidden;
+  @media (max-width: 1260px) {
+    width: 97vw;
+  }
+  .createbutton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    button {
+      background: linear-gradient(180deg, #dd962b 19.44%, #e39c2d 23.36%, #7e300f 49.18%, #dea85e 79.17%);
+      cursor: pointer;
+      border-radius: 8px;
+      padding: 12px 23.5px;
+      font-family: Solway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #ffffff;
+      line-height: 24px;
+      margin: 0 10px;
+    }
+  }
+  .typebuttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    button {
+      cursor: pointer;
+      flex: 1 1 0px;
+      margin: 0 10px;
+      border: 2px solid #cca66a;
+      box-sizing: border-box;
+      border-radius: 8px;
+      font-family: Solway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 125%;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    .colored {
+      background: #cca66a;
+      padding: 10px;
+    }
+    .outlined {
+      padding: 10px;
+    }
+  }
+  .titleWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+    .title-heading {
+      font-family: Solway;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 60px;
+      line-height: 72px;
+      text-transform: uppercase;
+      background-image: linear-gradient(#dd962b 0%, #e39c2d 6.56%, #7e300f 49.79%, #dea85e 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .playTournamentContainer {
+    .titleWrapper {
+      margin-top: 30px;
+      margin-bottom: 35px;
+      .title-heading {
+        font-size: 45px;
+        line-height: 32px;
+      }
+    }
+    .createbutton,
+    .typebuttons {
+      flex-direction: row;
+      button {
+        padding: 10px 0 !important;
+        font-size: 18px;
+        flex: 1;
+      }
+    }
+    .typebuttons {
+      margin-top: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .playTournamentContainer {
+    .titleWrapper {
+      margin-top: 20px;
+      margin-bottom: 25px;
+      .title-heading {
+        font-size: 30px !important;
+        line-height: 21px;
+      }
+    }
+    .createbutton,
+    .typebuttons {
+      flex-direction: column;
+      padding: 0 10px;
+      button {
+        margin: 10px 0 !important;
+        padding: 10px 0 !important;
+        font-size: 18px;
+        width: 100%;
+      }
+    }
+    .menubuttons {
+      margin-top: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .choseModeContainer {
+    width: 100%;
+    .playTournamentContainer {
+      width: 100%;
+    }
+  }
+}
+
+.warFrontWrapperContainer {
+  .createbutton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    button {
+      background: url("./assets/images/warfront/create-tournament.png");
+      background-size: 100% 100%;
+      cursor: pointer;
+      border-radius: 8px;
+      padding: 20px 23.5px;
+      font-family: Solway;
+      font-style: normal;
+      height: 80px;
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #ffffff;
+      line-height: 102%;
+      margin: 0 10px;
+      border: none;
+    }
+  }
+  .typebuttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    button {
+      cursor: pointer;
+      border: none;
+      width: 290px;
+      height: 60px;
+      margin: 0 18px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      font-family: Solway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 125%;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    .colored {
+      // background: #cca66a;
+      background: url("./assets/images/warfront/lobbybutton.png");
+      background-size: 100% 100%;
+      padding: 10px;
+    }
+    .outlined {
+      background: url("./assets/images/warfront/tournament-noback.png");
+      background-size: 100% 100%;
+      padding: 10px;
+    }
+  }
+  .titleWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+    .title-heading {
+      font-family: Solway;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 60px;
+      line-height: 72px;
+      text-transform: uppercase;
+      background-image: linear-gradient(#dd962b 0%, #ffe46e 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

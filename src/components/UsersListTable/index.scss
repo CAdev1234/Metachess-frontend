@@ -1,0 +1,171 @@
+.usersListTable {
+  margin-top: 30px;
+  overflow-x: auto;
+  table {
+    border-spacing: 20px 20px;
+  }
+  .usersListTableHeaderWrapper {
+    th {
+      border: 2px solid #cca66a;
+      box-sizing: border-box;
+      border-radius: 10px;
+      padding: 18px 0;
+      font-family: Solway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-align: center;
+      min-width: 100px;
+      width: 216px;
+    }
+  }
+  .usersListTableItemWrapper {
+    .badge {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 25px;
+      background: #0f1f38 0% 0% no-repeat padding-box;
+      border-radius: 14px;
+      font-family: var(--bs-font-sans-serif);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.78px;
+      color: #ffffff;
+      max-height: 25px;
+      padding: 2px 25px 3px;
+    }
+  }
+  .usersListTableItemWrapper > td {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 216px;
+    p {
+      font-family: Solway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 140%;
+      text-transform: capitalize;
+      color: #ffffff;
+    }
+  }
+
+  .usersListTableItemWrapper {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .side {
+    padding: 0 !important;
+    height: 55px;
+    align-items: center;
+    img {
+      height: 36px;
+    }
+  }
+
+  .cannot-play {
+    cursor: default;
+
+    .elo p {
+      color: #ff2d2d;
+    }
+  }
+
+  .my-room {
+    cursor: default;
+    // background-color: #0f1f38 !important;
+    .elo p,
+    p {
+      color: #ffffff;
+    }
+  }
+
+  .usersListTableItemWrapper:nth-child(odd) {
+    // background: #f5f5f5;
+    &.markedRed {
+      // background: #f8ddb1;
+    }
+  }
+  .usersListTableItemWrapper:nth-child(even) {
+    &.markedRed {
+      // background: #ffedcf;
+    }
+  }
+
+  .usersListTableItemWrapper:hover {
+    // background: #bbcdea;
+  }
+  .cells > :nth-child(1),
+  .usersListTableItemWrapper .nameWrapper {
+    max-width: calc(100vw * (450 / 1920)) !important;
+    min-width: calc(100vw * (450 / 1920)) !important;
+    @media (max-width: 1024px) {
+      max-width: calc(1024px * (330 / 1920)) !important;
+      min-width: calc(1024px * (330 / 1920)) !important;
+    }
+  }
+  // .cells > :nth-child(2) {
+  //   width: 193px !important;
+  // }
+  // .cells > :nth-child(3) {
+  //   width: 153px !important;
+  // }
+  // .cells > :nth-child(4) {
+  //   width: 92px !important;
+  // }
+  // .cells > :nth-child(5) {
+  //   width: 43px !important;
+  // }
+  // .cells > :nth-child(6) {
+  //   width: 142px !important;
+  // }
+  // .cells > :nth-child(7) {
+  //   width: 142px !important;
+  // }
+}
+
+.usersListTable p {
+  font-size: 1.2rem;
+  letter-spacing: 1.26px;
+  color: #0f1f38;
+}
+
+.warFrontWrapperContainer {
+  .usersListTableHeaderWrapper {
+    th {
+      border: none !important;
+      height: 35px;
+      background: url("./assets/images/warfront/lobbytable.png");
+      background-size: 100% 100%;
+      border-radius: 10px;
+      padding: 18px 0;
+      font-family: Solway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-align: center;
+      min-width: 100px;
+      width: 216px;
+    }
+  }
+  .cells > :nth-child(1),
+  .usersListTableItemWrapper .nameWrapper {
+    max-width: unset !important;
+    min-width: unset !important;
+    @media (max-width: 1024px) {
+      max-width: unset !important;
+      min-width: unset !important;
+    }
+  }
+}

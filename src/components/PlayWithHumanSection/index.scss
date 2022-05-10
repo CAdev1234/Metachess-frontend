@@ -1,0 +1,351 @@
+.buttonNewGame {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 2px solid #0f1f38;
+  border-radius: 8px;
+  opacity: 1;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 1.26px;
+  color: #0f1f38;
+  opacity: 1;
+  width: 248px;
+  height: 56px;
+}
+.playWithHumanContainer {
+  display: flex;
+  flex: 1;
+  position: relative;
+  flex-direction: column;
+  width: 1161px;
+  @media (max-width: 1161px) {
+    width: 97vw;
+  }
+  & .backToSelection {
+    margin-bottom: 37px;
+    display: flex;
+    & p {
+      color: #297bfb;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+  .gamebuttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    button {
+      background: linear-gradient(180deg, #dd962b 19.44%, #e39c2d 23.36%, #7e300f 49.18%, #dea85e 79.17%);
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 10px 57px;
+      font-family: Solway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 0 10px;
+      &.p-lg {
+        padding: 10px 107px;
+      }
+    }
+  }
+  .menubuttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    button {
+      cursor: pointer;
+      margin: 0 10px;
+      border: 2px solid #cca66a;
+      box-sizing: border-box;
+      border-radius: 8px;
+      font-family: Solway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    .colored {
+      background: #cca66a;
+      padding: 10px 106px;
+    }
+    .outlined {
+      padding: 10px 38px;
+    }
+  }
+  .mRight {
+    margin-right: 25px;
+  }
+  .mBottom {
+    margin-bottom: 25px;
+  }
+  .titleWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    .title-heading {
+      font-family: Solway;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 60px;
+      line-height: 45px;
+      text-transform: uppercase;
+      background-image: linear-gradient(#dd962b 0%, #e39c2d 6.56%, #7e300f 49.79%, #dea85e 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .title-heading {
+    font-size: 25px !important;
+  }
+  .gamebuttons button {
+    margin: 10px !important;
+  }
+  .usersListTableItemWrapper {
+    flex-direction: column !important;
+  }
+  .usersListTableHeaderWrapper p {
+    margin: 10px !important ;
+  }
+  .colored {
+    margin-bottom: 10px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title-heading {
+    font-size: 35px !important;
+  }
+  .gamebuttons button {
+    margin: 10px !important;
+  }
+}
+@media screen and (max-width: 656px) {
+  .colored {
+    margin-bottom: 10px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .playWithHumanContainer {
+    .titleWrapper {
+      margin-top: 30px;
+      margin-bottom: 35px;
+      .title-heading {
+        font-size: 45px;
+        line-height: 32px;
+      }
+    }
+    .gamebuttons,
+    .menubuttons {
+      flex-direction: row;
+      button {
+        padding: 10px 0 !important;
+        font-size: 18px;
+        flex: 1;
+      }
+    }
+    .menubuttons {
+      margin-top: 25px;
+    }
+    .usersListTable {
+      th {
+        font-size: 14px;
+        padding: 15px;
+      }
+      td {
+        padding: 15px;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .playWithHumanContainer {
+    .titleWrapper {
+      margin-top: 20px;
+      margin-bottom: 25px;
+      .title-heading {
+        font-size: 30px !important;
+        line-height: 21px;
+      }
+    }
+    .gamebuttons,
+    .menubuttons {
+      flex-direction: column;
+      padding: 0 10px;
+      button {
+        margin: 10px 0 !important;
+        padding: 10px 0 !important;
+        font-size: 18px;
+        width: 100%;
+      }
+    }
+    .menubuttons {
+      margin-top: 25px;
+    }
+    .usersListTable {
+      th {
+        font-size: 14px;
+        padding: 15px;
+      }
+      td {
+        padding: 15px;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .usersListTable {
+    table {
+      border-spacing: 10px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .choseModeContainer {
+    width: 100%;
+    .playWithHumanContainer {
+      width: 100%;
+    }
+  }
+}
+
+.warFrontWrapperContainer {
+  .buttonNewGame {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 2px solid #0f1f38;
+    border-radius: 8px;
+    opacity: 1;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1.26px;
+    color: #0f1f38;
+    opacity: 1;
+    width: 248px;
+    height: 56px;
+  }
+  .playWithHumanContainer {
+    display: flex;
+    flex: 1;
+    position: relative;
+    flex-direction: column;
+    width: 1161px;
+    @media (max-width: 1161px) {
+      width: 97vw;
+    }
+    & .backToSelection {
+      margin-bottom: 37px;
+      display: flex;
+      & p {
+        color: #297bfb;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+    .gamebuttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      button {
+        width: 300px;
+        height: 65px;
+        background: url("./assets/images/warfront/lobbybutton.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        // background: linear-gradient(180deg, #dd962b 19.44%, #e39c2d 23.36%, #7e300f 49.18%, #dea85e 79.17%);
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 10px 30px;
+        font-family: Solway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin: 0 10px;
+        &.p-lg {
+          padding: 10px 10px;
+        }
+      }
+    }
+    .menubuttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      button {
+        border: none !important;
+        width: 300px;
+        height: 65px;
+        background: url("./assets/images/warfront/lobbybutton.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin: 0 10px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        font-family: Solway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+      .colored {
+        // background: #cca66a;
+        // padding: 10px 106px;
+      }
+      .outlined {
+        // padding: 10px 38px;
+        background: url("./assets/images/warfront/tournament-noback.png");
+        background-size: 100% 100%;
+      }
+    }
+    .mRight {
+      margin-right: 25px;
+    }
+    .mBottom {
+      margin-bottom: 25px;
+    }
+    .titleWrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 35px;
+      margin-bottom: 50px;
+      .title-heading {
+        font-family: Solway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 45px;
+        text-transform: uppercase;
+        background-image: linear-gradient(#dd962b 0%, #ffe46e 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.toastPageContainer {
+  // position: relative;
+  display: flex;
+  flex: 1;
+}
+.pageDisabler {
+  animation: fadeIn ease 20s;
+  background: #f8f8f8;
+  opacity: 0.43;
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+}

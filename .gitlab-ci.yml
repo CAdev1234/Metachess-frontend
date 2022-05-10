@@ -1,0 +1,68 @@
+
+stages:
+  - build
+  - deploy
+
+build:development:
+  image: node:12.20.0
+  stage: build
+  only:
+    - development
+  script:
+    - yarn install
+    - yarn build
+  
+build:production:
+  image: node:12.20.0
+  stage: build
+  only:
+    - main
+  script:
+    - yarn install
+    - yarn build-production
+
+deploy:development:
+  stage: deploy
+  image: docker:stable
+  environment:
+    name: development
+    url: https://dev-game.metachess.network
+  only: 
+    - development
+  script:
+    - echo "Building application..."
+    - apk add yarn
+    - yarn install
+    - yarn build
+    - echo "Application successfully built."
+    - echo "Deploying application..."
+    - apk add --no-cache rsync openssh
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" >> private.key
+    - chmod 600 private.key
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - rsync -rav --delete -e "ssh -i private.key" public/ $URL:/var/www/brainiacchess/game
+    - echo "Application successfully deployed."
+
+deploy:production:
+  stage: deploy
+  image: docker:stable
+  environment:
+    name: production
+    url: https://game.metachess.network
+  only: 
+    - main
+  script:
+    - echo "Building application..."
+    - apk add yarn
+    - yarn install
+    - yarn build-production
+    - echo "Application successfully built."
+    - echo "Deploying application..."
+    - apk add --no-cache rsync openssh
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" >> private.key
+    - chmod 600 private.key
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - rsync -rav --delete -e "ssh -i private.key" public/ $URL:/var/www/brainiacchess/game
+    - echo "Application successfully deployed."

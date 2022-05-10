@@ -1,0 +1,238 @@
+.playWithAISectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  & .backToSelection {
+    margin-bottom: 25px;
+    display: flex;
+    width: 100%;
+    & p {
+      color: #297bfb;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+  & .headerWrapper {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    .header-heading {
+      font-family: Solway;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 45px;
+      line-height: 34px;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        #dd962b 0%,
+        #e39c2d 6.56%,
+        #7e300f 49.79%,
+        #dea85e 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  & .squaredWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    .squareButtonContainer {
+      width: 190px;
+      height: 175px;
+      .black-level-overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: relative;
+        .lock-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          opacity: 0.7;
+          background-image: url("./assets/images/lock.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 100%;
+        }
+      }
+      .squareButtonChildrenWrapper {
+        .pawn {
+          height: 85px;
+          &::before {
+            height: 160px;
+            width: 124px;
+            top: -60px;
+          }
+        }
+        .horse {
+          background-image: url("assets/images/Horse.png");
+          width: 110px;
+          height: 100px;
+        }
+        .bishop {
+          background-image: url("assets/images/Bishop.png");
+          width: 110px;
+          height: 100px;
+        }
+        .rook {
+          background-image: url("assets/images/Rook.png");
+          width: 110px;
+          height: 100px;
+        }
+        .king {
+          background-image: url("assets/images/King.png");
+          width: 110px;
+          height: 100px;
+        }
+        .queen {
+          background-image: url("assets/images/Queen.png");
+          width: 110px;
+          height: 100px;
+        }
+      }
+      .squaredButtonTitle {
+        margin: 10px auto 15px auto;
+        font-size: 20px;
+      }
+    }
+  }
+  & .noMargin:first-child {
+    margin-left: 0;
+  }
+  & .noMargin:last-child {
+    margin-right: 0;
+  }
+}
+
+.warFrontWrapperContainer {
+  .playWithAISectionContainer {
+    & .squaredWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+      gap: 20px;
+      .squareButtonContainer {
+        width: 200px;
+        height: 200px;
+        background-size: 100% 100%;
+        .black-level-overlay {
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.4);
+          position: relative;
+          .lock-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0.7;
+            background-image: url("./assets/images/lock.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 100%;
+          }
+        }
+      }
+      .squareButtonChildrenWrapper {
+        .black-level-overlay {
+          background: transparent;
+          .lock-image {
+            display: none;
+          }
+        }
+        .beginner {
+          background: url("./assets/images/warfront/difficult/beginner.png");
+          height: 120px !important;
+          width: 50px !important;
+          background-size: 100% 100%;
+          position: absolute;
+          top: 20px;
+        }
+        .horse {
+          background-image: url("./assets/images/warfront/difficult/rookier.png");
+          background-size: 100% 100%;
+          height: 120px !important;
+          width: 70px !important;
+          position: absolute;
+          top: 20px;
+        }
+        .bishop {
+          background-image: url("./assets/images/warfront/difficult/amatuer.png");
+          background-size: 100% 100%;
+          height: 120px !important;
+          width: 50px !important;
+          position: absolute;
+          top: 20px;
+        }
+        .rook {
+          background-image: url("assets/images/warfront/difficult/intermediate.png");
+          background-size: 100% 100%;
+          height: 120px !important;
+          width: 50px !important;
+          position: absolute;
+          top: 20px;
+        }
+        .king {
+          background-image: url("assets/images/warfront/difficult/professional.png");
+          background-size: 100% 100%;
+          height: 120px !important;
+          width: 50px !important;
+          position: absolute;
+          top: 20px;
+        }
+        .queen {
+          background-image: url("assets/images/warfront/difficult/world-class.png");
+          background-size: 100% 100%;
+          height: 120px !important;
+          width: 60px !important;
+          position: absolute;
+          top: 20px;
+        }
+        .master {
+          background-image: url("assets/images/warfront/difficult/master.png");
+          background-size: 100% 100%;
+          height: 131px !important;
+          width: 122px !important;
+          position: absolute;
+          top: 20px;
+        }
+        .grand-master {
+          background-image: url("assets/images/warfront/difficult/grand-master.png");
+          background-size: 100% 100%;
+          height: 131px !important;
+          width: 135px !important;
+          position: absolute;
+          top: 20px;
+        }
+        .legend {
+          background-image: url("assets/images/warfront/difficult/legend.png");
+          background-size: 100% 100%;
+          height: 117px !important;
+          width: 146px !important;
+          position: absolute;
+          top: 26px;
+        }
+        .immortal {
+          background-image: url("assets/images/warfront/difficult/immortal.png");
+          background-size: 100% 100%;
+          height: 104px !important;
+          width: 170px !important;
+          position: absolute;
+          top: 35px;
+        }
+      }
+      .squaredButtonTitle {
+        margin: 15px auto 30px auto !important;
+        font-size: 14px !important;
+      }
+    }
+  }
+}

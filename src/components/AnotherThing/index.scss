@@ -1,0 +1,102 @@
+.anotherThingContainer {
+    background: #0c1221;
+    /* 1 */
+    box-shadow: 4px 0px 30px rgba(40, 61, 97, 0.7), 0px 4px 30px rgba(32, 49, 79, 0.7);
+    border-radius: 20px;
+    width: calc(100vw * (664 / 1920));
+    margin-left: calc(100vw * (32 / 1920));
+    padding: 0 2vmax;
+    .sectionTitle {
+        color: #fff;
+    }
+    .circleWrapperContainer {
+        background: #303642;
+        height: 16vmin;
+        width: 16vmin;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        background: #303642;
+        padding: 2vmin 2vmax;
+        width: 100%;
+        display: flex;
+        height: 6vmin;
+        justify-content: space-between;
+        border-radius: 10px;
+        align-items: center;
+        .text {
+            font-size: 16px;
+            line-height: 140%;
+            color: #cca66a;
+            @media screen and (max-width: 500px) {
+                font-size: 10px;
+            }
+        }
+        // .circlePercentageWrapper {
+        //     position: absolute;
+        //     right: 10%;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        // }
+        .circleTitle {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 0.32px;
+            color: rgba(255, 255, 255, 0.9);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @media screen and (max-width: 500px) {
+                font-size: 14px;
+            }
+        }
+        .summaryCircleProgress {
+            width: fit-content !important;
+        }
+        .symbols {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            align-self: center;
+            .symbolWrapper {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                align-items: center;
+                .titleWrapper {
+                    display: flex;
+                    flex: 1;
+                    flex-direction: row;
+                    align-items: center;
+                    .title {
+                        margin-left: 2px;
+                        font-weight: 600;
+                        font-size: 1rem;
+                        letter-spacing: 0.26px;
+                        color: rgba(255, 255, 255, 0.9);
+                    }
+                    .indicator {
+                        height: 7px;
+                        width: 7px;
+                        border-radius: 4px;
+                    }
+                    .count {
+                        font-size: 1rem;
+                        letter-spacing: 0.23px;
+                        color: rgba(255, 255, 255, 0.6);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .anotherThingContainer {
+        width: 100%;
+    }
+}

@@ -1,0 +1,105 @@
+@import "../../helpers.scss";
+.timer {
+  width: 7vmax;
+  height: 8vmin;
+  min-width: 82px;
+  min-height: 48px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 8px;
+  opacity: 1;
+  font-weight: bold;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1.8rem;
+  letter-spacing: 0.43px;
+  color: #0f1f38;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameInfoContainer {
+  display: flex;
+  flex-direction: column;
+  // width: calc(100vw * (468 / 1920));
+  background: #0c1221 0% 0% no-repeat padding-box;
+  box-shadow: 4px 0px 30px rgba(40, 61, 97, 0.7),
+    0px 4px 30px rgba(32, 49, 79, 0.7);
+  min-height: 175px;
+  z-index: 1;
+
+  .block-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .block {
+    margin-bottom: 15px;
+    flex: 0 0 50%;
+  }
+
+  .value {
+    color: #607aa2;
+  }
+
+  .title-small {
+    font-size: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+
+  .value-image {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+    &.win {
+      font-size: 19px;
+      color: #0a860a;
+
+      .trophy {
+        height: 18px;
+      }
+    }
+    &.grey {
+      color: #716e6e;
+    }
+    &.lose {
+      color: #fd2f2f;
+    }
+  }
+
+  .trophy {
+    height: 16px;
+    margin-top: 2px;
+  }
+
+  .title {
+    font-weight: 700;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .mode {
+    color: #607aa2;
+    font-weight: 600;
+  }
+  .gameDetail {
+    padding: 5px 20px;
+    color: #cca66b;
+  }
+}
+
+.gameInfoTitle {
+  color: #cca66b;
+  font-family: Solway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  text-transform: uppercase;
+  padding: 20px 20px 25px;
+}

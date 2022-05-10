@@ -1,0 +1,36 @@
+.request-draw-modal {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  .title {
+    color: green;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    width: unset;
+  }
+
+  .btn-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  & .timeleft {
+    text-align: center;
+    & p {
+      font-size: 1.5rem;
+      color: green;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.overlay-div-celebration {
+    z-index: 100000;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    & .headerWrapper {
+        margin-top: 30px;
+        margin-bottom: 75px;
+        display: flex;
+        justify-content: center;
+        .header-heading {
+            font-family: Solway;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 54px;
+            line-height: 40px;
+            text-transform: uppercase;
+            background-image: linear-gradient(#dd962b 0%, #ffe46e 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}

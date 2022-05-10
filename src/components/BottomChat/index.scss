@@ -1,0 +1,290 @@
+.bottomChatWrapper {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+
+  overflow-x: auto;
+  .bottomChatItemWrapper {
+    border-radius: 10px 10px 0px 0px;
+
+    margin: 0px 2px;
+    // background: #f1f1f1 0% 0% no-repeat padding-box;
+    min-width: 250px;
+    width: calc(100vw * (377 / 1920));
+
+    .bottomChatHeader {
+      border: 3px solid #dd962b;
+      cursor: pointer;
+      background-color: #0c1222;
+      // background: #f1f1f1 0% 0% no-repeat padding-box;
+
+      border-bottom-width: 0px;
+      padding: 4px;
+
+      border-radius: 10px 10px 0px 0px;
+
+      max-height: calc(100vw * (51 / 1920));
+      min-height: 30px;
+
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .userInfo {
+        margin-left: 16px;
+        display: flex;
+        align-items: center;
+        .chatIcon {
+          margin-right: 8px;
+          max-height: 26px;
+          max-width: 26px;
+          border-radius: 50%;
+          border: 2px solid #dd962b;
+        }
+        p {
+          font-family: var(--bs-font-sans-serif);
+          font-size: 1.1rem;
+          letter-spacing: 1.08px;
+          color: #fff;
+          // color: #0f1f38;
+        }
+      }
+      .closeIcon {
+        margin-right: 16px;
+        max-height: 16px;
+        max-width: 16px;
+      }
+    }
+    .chatContent {
+      position: fixed;
+      min-width: 250px;
+      width: calc(100vw * (377 / 1920));
+
+      flex-direction: column;
+      background-color: #0c1222;
+      display: flex;
+      height: 60vmin;
+      bottom: 0;
+
+    }
+
+    .chatContainer {
+      border: 3px solid #dd962b;
+      padding: 8px;
+      background-color: #0c1222;
+      border-top-width: 2px;
+      height: 100%;
+
+      border-bottom-width: 0px;
+
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      // background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 2px 6px #0f1f3829;
+      flex: 1;
+      .small {
+        display: flex;
+        flex-direction: column;
+        gap: 2vmin;
+        max-height: 45vmin;
+        box-sizing: border-box;
+        overflow-y: auto;
+        padding-bottom: 2vmin;
+      }
+    }
+
+    .messageWrapper {
+      // margin: 16px 0px;
+      background: #2d333f 0% 0% no-repeat padding-box;
+      border-radius: 0px 14px 14px 25px;
+      align-self: flex-start;
+      padding: 4px 6px;
+    }
+    .userMessageWrapper {
+      align-self: flex-end;
+      border-radius: 14px 0px 14px 25px;
+      background: #cda66b 0% 0% no-repeat padding-box;
+    }
+
+    .messageText {
+      padding: 8px;
+      text-align: left;
+      font-family: var(--bs-font-sans-serif);
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 1.02px;
+      color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .userMessageText {
+      text-align: left;
+      color: #ffffff;
+    }
+
+    .messageTime {
+      padding: 0px 8px 8px;
+      text-align: left;
+      font-family: var(--bs-font-sans-serif);
+      font-size: 0.8rem;
+      letter-spacing: 0.72px;
+      color: #ffffff;
+    }
+    .separatorWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .scrollMessagesWrapper {
+      overflow-y: scroll;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      max-height: 100%;
+    }
+
+    .separatorLine {
+      border: 1px solid #fff;
+      display: flex;
+      flex: 1;
+    }
+
+    .separatorTitle {
+      margin: 8px;
+      font-family: var(--bs-font-sans-serif);
+      font-size: 0.9rem;
+      letter-spacing: 0.23px;
+      color: #fff;
+    }
+
+    .chatInputWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 16px;
+      border-top: 2px solid #9aa9c1;
+    }
+
+    .chatInputInput {
+      padding: 8px;
+      display: flex;
+      text-align: left;
+      font-family: var(--bs-font-sans-serif);
+      font-size: 1rem;
+      letter-spacing: 1.02px;
+      background-color: transparent;
+      color: #fff;
+      border: 0px solid transparent;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .emojiInput {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
+      height: 100%;
+      img {
+        height: 20px;
+      }
+    }
+
+    
+    
+    .unseenNumberIndicatorContainer {
+      margin-left: 4px;
+      width: 23px;
+      height: 23px;
+      border-radius: 12px;
+      background: #cda66b 0% 0% no-repeat padding-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > p {
+        font-weight: bold;
+        font-family: var(--bs-font-sans-serif);
+        font-size: 1rem;
+        letter-spacing: 0.9px !important;
+        color: #ffffff !important;
+      }
+    }
+  }
+}
+
+// chat content modified for friends messages
+
+.bottomChatWrapper{
+  margin-right: 5px;
+  .bottom__chat__itemWrapper {
+    height: 60vmin;
+    width: 30vw;
+    min-width: 320px;
+    max-width: 440px;
+    @media screen and (max-width:320px) {
+      width: 200px;
+    }
+    display: flex;
+    flex-direction: column;
+    margin:0px 10px;
+    margin-top: auto;
+    .chatContainer{
+      .small{
+        padding: 10px;
+      }
+    }
+    .messageWrapper{
+      margin-right: 6px;
+      margin-left: 2px;
+    }
+    .bottomChatHeader{
+      margin-top: auto;
+    }
+    .chat__content{
+      position: relative;
+      width: 100%;
+      margin-top: auto;
+         
+    }
+    .userInfo{
+      flex: 1
+    }
+
+    .bottom__chat__header{
+      display: flex;
+    }
+
+    .closeItemChat{
+      max-height: calc(100vw * (72 / 1920));
+    }
+      
+    .bottomChatHeader__closeIcon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:10px 16px;
+      .chat__content_closeIcon{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.bottomChatWrapper .bottom__chat__itemWrapper__mymessages{
+  min-width: 250px;
+  max-width: 320px;
+  @media screen and (max-width:320px) {
+    width: 200px;
+  }
+}
+
+
+// ==> end of chat content modified for friends messages

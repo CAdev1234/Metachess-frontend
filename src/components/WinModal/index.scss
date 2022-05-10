@@ -1,0 +1,373 @@
+.win-modal {
+    background: white;
+    width: 100%;
+    padding-bottom: 30px;
+    border-radius: 28px 28px 25px 25px;
+    .text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .elo-container {
+        margin-bottom: 30px;
+        margin-top: 20px;
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-animation: elo-container 1.5s;
+        /* Safari 4+ */
+        -moz-animation: elo-container 1.5s;
+        /* Fx 5+ */
+        -o-animation: elo-container 1.5s;
+        /* Opera 12+ */
+        animation: elo-container 1.5s;
+        /* IE 10+, Fx 29+ */
+    }
+    .elo {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 700;
+        &.win {
+            color: #0a860a;
+            -webkit-animation: elo-win 1.8s;
+            /* Safari 4+ */
+            -moz-animation: elo-win 1.8s;
+            /* Fx 5+ */
+            -o-animation: elo-win 1.8s;
+            /* Opera 12+ */
+            animation: elo-win 1.8s;
+            /* IE 10+, Fx 29+ */
+        }
+        &.lose {
+            color: #ff4f4f;
+            -webkit-animation: elo-lose 1.8s;
+            /* Safari 4+ */
+            -moz-animation: elo-lose 1.8s;
+            /* Fx 5+ */
+            -o-animation: elo-lose 1.8s;
+            /* Opera 12+ */
+            animation: elo-lose 1.8s;
+            /* IE 10+, Fx 29+ */
+        }
+    }
+    @-webkit-keyframes elo-win {
+        0% {
+            color: #0f1f38;
+        }
+        70% {
+            color: #0f1f38;
+        }
+        100% {
+            color: #0a860a;
+        }
+    }
+    @-moz-keyframes elo-win {
+        0% {
+            color: #0f1f38;
+        }
+        70% {
+            color: #0f1f38;
+        }
+        100% {
+            color: #0a860a;
+        }
+    }
+    @-o-keyframes elo-win {
+        0% {
+            color: #0f1f38;
+        }
+        70% {
+            color: #0f1f38;
+        }
+        100% {
+            color: #0a860a;
+        }
+    }
+    @keyframes elo-win {
+        0% {
+            color: #0f1f38;
+        }
+        70% {
+            color: #0f1f38;
+        }
+        100% {
+            color: #0a860a;
+        }
+    }
+    @-webkit-keyframes elo-lose {
+        0% {
+            color: #0f1f38;
+        }
+        70% {
+            color: #0f1f38;
+        }
+        100% {
+            color: #ff4f4f;
+        }
+    }
+    @-moz-keyframes elo-lose {
+        0% {
+            color: #0f1f38;
+        }
+        70% {
+            color: #0f1f38;
+        }
+        100% {
+            color: #ff4f4f;
+        }
+    }
+    @-o-keyframes elo-lose {
+        0% {
+            color: #0f1f38;
+        }
+        70% {
+            color: #0f1f38;
+        }
+        100% {
+            color: #ff4f4f;
+        }
+    }
+    @keyframes elo-lose {
+        0% {
+            color: #0f1f38;
+        }
+        70% {
+            color: #0f1f38;
+        }
+        100% {
+            color: #ff4f4f;
+        }
+    }
+    .elo-title {
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: #607aa2;
+    }
+    @-webkit-keyframes elo-container {
+        0% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        50% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @-moz-keyframes elo-container {
+        0% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        50% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @-o-keyframes elo-container {
+        0% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        50% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes elo-container {
+        0% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        50% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .result {
+        color: #0f1f38;
+        font-size: 2.4rem;
+        text-align: center;
+        margin-top: 20px;
+        transform: translateY(0);
+        opacity: 1;
+        font-weight: 500;
+        -webkit-animation: result 0.9s;
+        /* Safari 4+ */
+        -moz-animation: result 0.9s;
+        /* Fx 5+ */
+        -o-animation: result 0.9s;
+        /* Opera 12+ */
+        animation: result 0.9s;
+        /* IE 10+, Fx 29+ */
+    }
+    @-webkit-keyframes result {
+        0% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        50% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @-moz-keyframes result {
+        0% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        50% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @-o-keyframes result {
+        0% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        50% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes result {
+        0% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        50% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .bg {
+        background-color: #0f1f38;
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        position: relative;
+        display: block;
+        svg {
+            width: 15px;
+            position: absolute;
+        }
+    }
+    p {
+        color: green;
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+    .link {
+        background: none;
+        color: #0f1f38;
+    }
+    .btn-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 20px;
+        .btn {
+            padding: 10px 15px;
+            width: 190px;
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+            -webkit-animation: btns 2s;
+            /* Safari 4+ */
+            -moz-animation: btns 2s;
+            /* Fx 5+ */
+            -o-animation: btns 2s;
+            /* Opera 12+ */
+            animation: btns 2s;
+            /* IE 10+, Fx 29+ */
+        }
+        @-webkit-keyframes btns {
+            0% {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            50% {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @-moz-keyframes btns {
+            0% {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            50% {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @-o-keyframes btns {
+            0% {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            50% {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes btns {
+            0% {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            50% {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+}

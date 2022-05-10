@@ -1,0 +1,100 @@
+.moveHistoryContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: calc(100vw * (468 / 1920));
+  @media (max-width: 768px) {
+    width: 100vw;
+  }
+
+  background: #0c1221;
+  box-shadow: 4px 0px 30px #283d61b3, 0px 4px 30px #20314fb3;
+  margin-top: 83px;
+  margin-bottom: 83px;
+  margin-left: calc(100vw * (59 / 1920));
+  margin-right: calc(100vw * (33 / 1920));
+
+  .title {
+    font-family: Solway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #cca66b;
+    padding: 20px 20px 25px;
+  }
+  .moveHistoryWrapper {
+    flex: 1;
+    overflow-y: auto;
+    p {
+      padding: 20px 0 20px 25px;
+      text-align: left;
+      font-weight: bold;
+      font-size: 1.3rem;
+      letter-spacing: 0.32px;
+      color: #0f1f38;
+      opacity: 1;
+    }
+    .cellWrapper {
+      height: 334.73px;
+      // overflow-y: scroll;
+      .moveHistoryCell {
+        width: 100%;
+        opacity: 1;
+        p {
+          padding: 14px 0 14px 35px;
+          text-align: left;
+          font-size: 1rem;
+          letter-spacing: 0.26px;
+          opacity: 1;
+        }
+      }
+      .moveHistoryCellOdd {
+        background: transparent;
+        p {
+          color: #cca66b;
+        }
+      }
+      .moveHistoryCellEven {
+        background: #cca66b;
+        p {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 430px) {
+  .moveHistoryContainer {
+    width: 94vw !important;
+    flex: none;
+    order: 3;
+  }
+  .chessboardContainer {
+    order: 1;
+  }
+  .chessboardSidebarWrapper {
+    order: 4;
+    width: auto;
+  }
+  .gameWrapper {
+    justify-content: center;
+    .actionButtonsWrapper {
+      display: flex;
+      order: 2;
+    }
+  }
+  .timersWrapper .actionButtonsWrapper {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 431px) {
+  .gameWrapper .actionButtonsWrapper {
+    display: none;
+  }
+  .timersWrapper .actionButtonsWrapper {
+    display: flex;
+  }
+}

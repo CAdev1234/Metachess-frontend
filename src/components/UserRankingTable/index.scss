@@ -1,0 +1,113 @@
+.usersRankingTable {
+    margin-top: 0;
+    overflow-x: auto;
+    width: 100%;
+    table {
+        border-spacing: 1vmax 1vmin;
+        width: 100%;
+    }
+    .usersRankingTableHeaderWrapper {
+        width: 100%;
+        box-sizing: border-box;
+        th {
+            border: 2px solid #cca66a;
+            box-sizing: border-box;
+            border-radius: 10px;
+            font-family: Solway;
+            font-style: normal;
+            padding: 0.5vmin 1vmax;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 120%;
+            @media screen and (max-width: 768px) {
+                font-size: 9px;
+            }
+            // @media screen and (max-width: 450px) {
+            //     font-size: 8px;
+            // }
+            text-transform: uppercase;
+            color: #ffffff;
+            text-align: center;
+        }
+    }
+    .usersRankingTableItemWrapper {
+        .badge {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 25px;
+            background: #0f1f38 0% 0% no-repeat padding-box;
+            border-radius: 14px;
+            font-family: var(--bs-font-sans-serif);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.78px;
+            color: #ffffff;
+            max-height: 25px;
+            padding: 2px 25px 3px;
+        }
+    }
+    .tableRankItemTextWrapper {
+        text-align: center;
+        padding: 1vmin 0;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        color: #fff;
+        @media screen and (max-width: 768px) {
+            font-size: 15px;
+        }
+        @media screen and (max-width: 450px) {
+            font-size: 12px;
+        }
+    }
+    td img {
+        height: 6vmin;
+        width: 6vmin;
+    }
+    .usersRankingTableItemWrapper {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+}
+
+.claimText {
+    font-family: Solway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #cca66a;
+    margin-left: 2vmax;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+    @media screen and (max-width: 450px) {
+        font-size: 10px;
+    }
+}
+
+.usersRankingTable p {
+    font-size: 1.2rem;
+    letter-spacing: 1.26px;
+    color: #0f1f38;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        min-width: 200vmin;
+    }
+    //     tr.usersRankingTableHeaderWrapper th {
+    //         min-width: 100px;
+    //     }
+    //     tr.usersRankingTableHeaderWrapper th:nth-child(2) {
+    //         min-width: 300px;
+    //     }
+    //     tr.usersRankingTableHeaderWrapper th:nth-child(5) {
+    //         min-width: 200px;
+    //     }
+    //     tr.usersRankingTableHeaderWrapper th:nth-child(6) {
+    //         min-width: 200px;
+    //     }
+}

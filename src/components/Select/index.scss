@@ -1,0 +1,40 @@
+.input-select {
+    width: 100%;
+    // max-width: 250px;
+    margin: 15px 0px;
+    &__control {
+        height: var(--input-height);
+        cursor: pointer !important;
+        border-radius: var(--border-radius-md) !important;
+        border-color: var(--color-field-empty) !important;
+        &--is-focused {
+            border-color: var(--color-primary-blue) !important;
+        }
+    }
+    &__placeholder {
+        text-transform: capitalize;
+        font-size: 16px !important;
+        color: #000 !important;
+    }
+    &__value-container {
+        padding: 5px 16px !important;
+        padding-left: 0.75rem !important;
+        color: #000 !important;
+    }
+    &__indicator-separator {
+        opacity: 0;
+    }
+    &__indicator {
+        padding: 0 8px !important;
+    }
+    &__option {
+        &--is-focused {
+            background: rgba(0, 0, 0, 0.025) !important;
+        }
+        &--is-selected {
+            font-weight: 500;
+            color: var(--color-primary-blue) !important;
+            background: rgba(0, 0, 0, 0.025) !important;
+        }
+    }
+}

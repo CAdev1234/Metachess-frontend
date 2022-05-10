@@ -1,0 +1,62 @@
+.paginationContainer {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 70px;
+	.pagination-buttons {
+		display: flex;
+		width: 110px;
+		justify-content: space-between;
+		button {
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+    		align-items: center;
+			color: #CCA66A;
+			border: 1px solid #CCA66A;
+			border-radius: 3px;
+			width: 30px;
+			height: 35px;
+			padding: 6px 8px;
+			box-sizing: border-box;
+			&:hover {
+				background: #CCA66A;
+				border: 1px solid #CCA66A;
+				color: #FFFFFF;
+				path {
+					stroke: #FFFFFF;
+				}
+			}
+		}
+	}
+}
+
+.warFrontWrapperContainer {
+	.paginationContainer {
+		.pagination-buttons {
+			display: flex;
+			width: 140px;
+			justify-content: space-between;
+			button {
+				cursor: pointer;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 3px;
+				width: 50px;
+				height: 55px;
+				padding: 6px 8px;
+				box-sizing: border-box;
+				background: url("./assets/images/warfront/pagination-arrow.png");
+				background-size: 100% 100%;
+				border: none;
+				margin-left: 20px;
+				svg {
+					display: none;
+				}
+				&:nth-child(1) {
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+}

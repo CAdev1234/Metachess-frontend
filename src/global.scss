@@ -1,0 +1,312 @@
+@import "./helpers.scss";
+@import "./pages/Index.scss";
+@import "./pages/treasurequest/index.scss";
+@import "./pages/already-authenticated/index.scss";
+@import "./pages/leaderboard/index.scss";
+//@import "./pages/test/index.scss";
+@import "./components/TreasureQuestRulesSection/index.scss";
+@import "./components/UserEditInfo/index.scss";
+@import "./components/TextField/index.scss";
+@import "./components/Select/index.scss";
+@import "./components/GameInfoTreasureHunt/index.scss";
+@import "./components/ChoosePVEModeSection/index.scss";
+@import "./components/CelebrationOverlay/index.scss";
+@import "./components/Modal/index.scss";
+@import "./components/WinModal/index.scss";
+@import "./components/UserRankingTable/index.scss";
+@import "./components/MaintenanceModal/index.scss";
+@import "./components/ResumeOldGameModal/index.scss";
+@import "./pages/game/index.scss";
+@import "./components/IntroScreen/index.scss";
+@import "./components/ChatWrapper/index.scss";
+@import "./components/ChessChat/index.scss";
+@import "./components/Timer/index.scss";
+@import "./components/Header/index.scss";
+@import "./components/Footer/index.scss";
+@import "./components/FriendsSidebar/index.scss";
+@import "./components/Home/index.scss";
+@import "./components/Button/index.scss";
+@import "./components/SquaredButton/index.scss";
+@import "./components/ChessboardWrapper/index.scss";
+@import "./components/MovesHistory/index.scss";
+@import "./components/ChoseModeSection/index.scss";
+@import "./components/SpectatorsDisplay/styles.scss";
+@import "./components/PlayWithAISection/index.scss";
+@import "./components/NewGameModal/index.scss";
+@import "./components/PageBackground/index.scss";
+@import "./components/PlayWithHumanSection/index.scss";
+@import "./components/PlayTournamentSection/index.scss";
+@import "./components/TournamentTable/index.scss";
+@import "./components/TournamentPagination/index.scss";
+@import url("https://fonts.googleapis.com/css2?family=Solway:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "./components/CirclePercentage/index.scss";
+@import "./components/PlayWithHumanSection/index.scss";
+@import "./components/ToastProvider/index.scss";
+@import "./components/Toasts/index.scss";
+@import "./components/UsersListTable/index.scss";
+@import "./components/SideChat/index.scss";
+@import "./components/BottomChat/index.scss";
+@import "./components/QuickPairingModal/index.scss";
+@import "./components/PlayWithHumanSection/index.scss";
+@import "./pages/maintenance/index.scss";
+@import "./components/ActionButtons/index.scss";
+@import "./components/RequestDrawModal/index.scss";
+@import "./components/BorderedGameButton/index.scss";
+//  profile
+@import "./pages/profile/index.scss";
+@import "./pages/join-game/index.scss";
+@import "./components/AnotherThing/index.scss";
+@import "./components/Matches/index.scss";
+@import "./components/ProfileDateRange/index.scss";
+@import "./components/ProfileSidebar/index.scss";
+@import "./components/ProfileSummary/index.scss";
+// AlertToast
+@import "./components/AlertToast/index.scss";
+.chatIcon {
+    margin-right: 8px;
+    max-height: 26px;
+    max-width: 26px;
+    border-radius: 50%;
+    border: 2px solid #dd962b;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+// @import "./bootstrap.min.css";
+:root {
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Solway; //var(--bs-font-sans-serif);
+}
+
+html,
+body,
+#___gatsby {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+}
+
+div[role="group"][tabindex] {
+    height: 100%;
+}
+
+#gatsby-focus-wrapper {
+    height: 100%;
+}
+
+// @font-face {
+//   font-family: "Segoe UI";
+//   src: url("../static/fonts/Segoe\ UI.woff") format("truetype");
+// }
+// @font-face {
+//   font-family: "Segoe UI";
+//   font-weight: 700;
+//   font-style: normal;
+//   src: url("../static/fonts/Segoe\ UI\ Bold.woff") format("truetype");
+//   font-display: swap;
+// }
+p {
+    color: #0f1f38;
+    line-height: 1.32;
+    font-weight: bold;
+}
+
+.xx-large {
+    font-size: 33px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    // font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.x-large {
+    font-size: 33px;
+}
+
+.large {
+    font-size: 22px;
+}
+
+.normal {
+    font-size: 15px;
+}
+
+.wrapContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    min-height: 100vh;
+    background: url("./assets/images/warfront/background.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    & .wrapPage {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        // position: relative;
+    }
+    &.no-scroll {
+        overflow: hidden;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+}
+
+.desktopMaxWidth {
+    margin: 0 auto;
+    max-width: 1161px;
+}
+
+button {
+    outline: none;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn {
+    background: #0f1f38 0% 0% no-repeat padding-box;
+    border-radius: 9px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    letter-spacing: 1.19px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.no-pointer {
+    cursor: default;
+}
+
+.mt-75 {
+    margin-top: 75px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mr-50 {
+    margin-right: 50px !important;
+}
+
+.pr-50 {
+    padding-right: 50px !important;
+}
+
+.mb-35 {
+    margin-bottom: 35px;
+}
+
+.mr-30 {
+    margin-right: 30px !important;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.unity-canvas {
+    height: 100vh;
+    width: min-content;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapContainer {
+        overflow-x: hidden;
+    }
+}
+
+////////////warfront///////////////
+.warFrontWrapperContainer {
+    min-height: 100vh;
+    background: url("./assets/images/warfront/background.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    & .headerWrapper {
+        margin-top: 30px;
+        margin-bottom: 75px;
+        display: flex;
+        justify-content: center;
+        .header-heading {
+            font-family: Solway;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 54px;
+            line-height: 40px;
+            text-transform: uppercase;
+            background-image: linear-gradient(#dd962b 0%, #ffe46e 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    & .squaredWrapper {
+        gap: 20px;
+        display: flex;
+        & .bottomAlign {
+            & .header-heading-title {
+                font-family: Solway;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 8rem;
+                line-height: 40px;
+                /* text-align: center; */
+                height: 100%;
+                text-transform: uppercase;
+                background-image: linear-gradient(#dd962b 0%, #ffe46e 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                /* vertical-align: middle; */
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+        }
+    }
+}

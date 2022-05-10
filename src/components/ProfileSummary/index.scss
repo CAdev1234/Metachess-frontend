@@ -1,0 +1,102 @@
+.profileSummaryContainer {
+    // padding: calc(100vw * (40 / 1920));
+    background: #0c1221;
+    /* 1 */
+    box-shadow: 4px 0px 30px rgba(40, 61, 97, 0.7), 0px 4px 30px rgba(32, 49, 79, 0.7);
+    border-radius: 20px;
+    width: 50%;
+    height: 100%;
+    .profileSummaryInnerContent.innerContent{
+        height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+    .sectionTitle {
+        color: #fff;
+        margin-bottom: 8%;
+    }
+    // min-height: 293px;
+    .winRatioWrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        // width: 120px;
+        margin: auto 0;
+        gap: 2vmax;
+        .symbols {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            align-self: center;
+            gap: 2vmax;
+            flex-wrap: wrap;
+            .symbolWrapper {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                align-items: center;
+                .titleWrapper {
+                    display: flex;
+                    flex: 1;
+                    flex-direction: row;
+                    align-items: center;
+                    .title {
+                        margin-left: 2px;
+                        font-weight: 600;
+                        font-size: 1rem;
+                        letter-spacing: 0.26px;
+                        color: rgba(255, 255, 255, 0.9);
+                    }
+                    .indicator {
+                        height: 7px;
+                        width: 7px;
+                        border-radius: 4px;
+                    }
+                    .count {
+                        font-size: 1rem;
+                        letter-spacing: 0.23px;
+                        color: rgba(255, 255, 255, 0.6);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.summaryCircleProgress {
+    position: relative;
+}
+
+.circleContent {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .circleTitle {
+        font-size: 1.3rem;
+        font-weight: bold;
+        letter-spacing: 0.32px;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    .circleSubtitle {
+        font-size: 0.8rem;
+        letter-spacing: 0.24px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .profileSummaryContainer {
+        width: fit-content;
+        min-width: 100%;
+    }
+}

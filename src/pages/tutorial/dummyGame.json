@@ -1,0 +1,16 @@
+{
+  "games": [
+    {
+        "IsWhite": true,
+        "fen": "2R5/4bppk/1p1p3Q/5R1P/4P3/5P2/r4q1P/7K b - - 6 50",
+        "agentMoves": [ { "from": "g7", "to": "h6" } ],
+        "rightMoves": [ { "from": "f5", "to": "f7" } ]
+    },
+    {
+        "IsWhite": false,
+        "fen": "2R5/4bppk/1p1p3Q/5R1P/4P3/5P2/r4q1P/7K b - - 6 50",
+        "agentMoves": [ { }, { "from": "c8", "to": "c1" } ],
+        "rightMoves": [ { "from": "g7", "to": "h6" }, { "from": "f2", "to": "h2" } ]
+    }
+  ]
+}

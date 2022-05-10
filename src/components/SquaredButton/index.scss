@@ -1,0 +1,315 @@
+.squareButtonContainer {
+    position: relative;
+    background: #0c1221;
+    box-shadow: 4px 0px 30px rgba(40, 61, 97, 0.7), 0px 4px 30px rgba(32, 49, 79, 0.7);
+    width: 400px;
+    height: 356px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    * {
+        transition: stroke 0.25s;
+    }
+    p {
+        transition: color 0.25s;
+        text-align: center;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    & .bottomAlign {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        background: radial-gradient( 50.13% 56.13% at 49.97% 46.63%, rgba(59, 91, 141, 0.77) 0%, #0c1221 100%);
+        &.multiple {
+            & div:first-of-type {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.squaredButtonTitle {
+    margin: 15px auto 30px auto;
+    letter-spacing: 0.84px;
+    color: rgba(204, 166, 107, 0.78);
+    font-family: Solway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 150%;
+}
+
+.squareButtonChildrenWrapper {
+    display: flex;
+    flex: 1;
+    width: 100% !important;
+    height: 100% !important;
+    .d-flex {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .tournament {
+        margin-top: 60px !important;
+      }
+    .pawn {
+        position: relative;
+        // height: 150px;
+        // width: auto;
+        background-image: url("assets/images/PawnPiece.png");
+        // &::before {
+        //     position: absolute;
+        //     content: "";
+        //     background-image: url("assets/images/PawnPiece.png");
+        //     background-size: contain;
+        //     background-repeat: no-repeat;
+        //     background-position: center center;
+        //     height: 220px;
+        //     width: 124px;
+        //     top: -65px;
+        //     left: calc(50% - 56px);
+        // }
+    }
+    .pawn,
+    .horse,
+    .bishop,
+    .rook,
+    .king,
+    .user,
+    .queen {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 150px;
+    }
+    .user {
+        background-image: url("assets/images/UserIcon.png");
+        width: 115px;
+    }
+    .chest {
+        background-image: url("assets/images/TreasureChest.png");
+        width: 115px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 80%;
+    }
+}
+
+.tournamentSquad {
+    .squareButtonChildrenWrapper {
+        width: inherit;
+        height: inherit;
+        display: block;
+        position: relative;
+        .user {
+            position: absolute;
+            bottom: 10px;
+            width: 85px !important;
+            height: 93px !important;
+            &.user-1 {
+                left: 30px;
+            }
+            &.user-2 {
+                right: 30px;
+            }
+        }
+        .pawn {
+            height: 150px !important;
+            // &::before {
+            //     height: 160px;
+            //     width: 70px;
+            //     top: -25px;
+            //     left: calc(50% - 31px);
+            // }
+        }
+        .tLine-1 {
+            position: absolute;
+            width: 95px;
+            left: 75px;
+            top: 130px;
+            border-top: 1px solid #a2855b;
+            transform: rotate(-40deg);
+        }
+        .tLine-2 {
+            position: absolute;
+            width: 95px;
+            right: 75px;
+            top: 130px;
+            border-top: 1px solid #a2855b;
+            transform: rotate(40deg);
+        }
+        .tLine-3 {
+            position: absolute;
+            width: 140px;
+            left: 130px;
+            top: 240px;
+            border-top: 1px solid #a2855b;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .squareButtonContainer {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .squareButtonContainer {
+        margin-right: 0 !important;
+    }
+    .tournamentSquad .squareButtonChildrenWrapper {
+        .tLine-1 {
+            width: 45px;
+            left: 78px;
+            top: 97px;
+            transform: rotate(-35deg);
+        }
+        .tLine-2 {
+            width: 45px;
+            right: 78px;
+            top: 97px;
+            transform: rotate(35deg);
+        }
+        .tLine-3 {
+            width: 60px;
+            left: 120px;
+            top: 180px;
+        }
+    }
+}
+
+.warFrontWrapperContainer {
+    .squareButtonContainer {
+        position: relative;
+        background: url("./assets/images/warfront/environment.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 400px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: none;
+        * {
+            transition: stroke 0.25s;
+        }
+        p {
+            transition: color 0.25s;
+            text-align: center;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        & .bottomAlign {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 0;
+            background: none;
+            &.multiple {
+                & div:first-of-type {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    
+    .squaredButtonTitle {
+        margin: 30px auto 0 auto;
+        letter-spacing: 0.84px;
+        color: #ffffff;
+        font-family: Solway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 150%;
+    }
+    
+    .choseModeSectionContainer {
+        .squareButtonChildrenWrapper {
+            display: flex ;
+            height: 100px !important;
+            margin-top: 35px;
+            flex: unset;
+            background: none;
+            margin-bottom: 0px;
+            .tournament {
+                margin-top: 60px;
+            }
+            .pawn {
+                position: relative;
+                background-image: url("assets/images/warfront/playai1.png");
+                height: 200px !important;
+                margin-left: 50px;
+            }
+            .user {
+                margin-right: 50px;
+            }
+            .chest {
+                height: 200px !important;
+                margin-left: 50px;
+            }
+            .pawn,
+            .horse,
+            .bishop,
+            .rook,
+            .king,
+            .user,
+            .queen {
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+                height: 200px !important;
+            }
+
+            .humanTournament {
+                background: url("./assets/images/warfront/human&tournament.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+                height: 235px !important;
+                width: 100%;
+                margin-bottom: 45px;
+            }
+    
+            .user {
+                background-image: url("assets/images/warfront/playai2.png");
+                width: 115px;
+            }
+        
+            .user-1 {
+                background-image: url("assets/images/warfront/treasure.png");
+                width: 115px;
+            }
+            .chest {
+                background-image: url("assets/images/warfront/TreasureChest.png");
+                width: 115px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position-y: 80%;
+            }
+            .user-2 {
+                background-image: url("assets/images/warfront/treasure2.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+                height: 200px !important;
+                margin-left: 50px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+.warFrontWrapperContainer {
+    .tournament  {
+        margin-top: 60px !important;
+    }
+}

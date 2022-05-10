@@ -1,0 +1,43 @@
+.dateRangeWrapper {
+    background: #cca66a;
+    border-radius: 8px;
+    width: 200px;
+    width: 40;
+    margin-top: 29px;
+    margin-bottom: 29px;
+    padding: 0 1vmax;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+        font-size: 1.1rem;
+        font-weight: 400;
+        letter-spacing: 0.28px;
+        color: #fff;
+    }
+    img {
+        width: 10px;
+        height: 16px;
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+    .leftIcon {
+        font-size: 20px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        z-index: 10;
+    }
+    // .invisibleButton {
+    //     position: absolute;
+    //     width: 50%;
+    //     height: 100%;
+    //     &.left {
+    //         left: 0;
+    //     }
+    //     &.right {
+    //         right: 0;
+    //     }
+    // }
+}

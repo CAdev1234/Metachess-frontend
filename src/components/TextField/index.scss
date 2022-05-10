@@ -1,0 +1,75 @@
+.text-field {
+    position: relative;
+    margin-top: 0.5rem;
+    max-width: 387px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: var(--border-radius-md);
+    margin: 12px 0px;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    @media screen and (max-width: 550px) {
+        max-width: 330px;
+    }
+    @media screen and (max-width: 483px) {
+        max-width: 300px;
+    }
+    @media screen and (max-width: 455px) {
+        max-width: 270px;
+    }
+    @media screen and (max-width: 414px) {
+        max-width: 240px;
+    }
+    .text-field__input {
+        background-color: transparent !important;
+        width: 385px !important;
+        color: #fff;
+        // @media screen and (max-width: 483px) {
+        //   width: 100% !important;
+        // }
+        // @media screen and (max-width: 416px) {
+        //   width: 100% !important;
+        // }
+    }
+    &__input {
+        width: 100%;
+        padding: 0.6rem 0.5rem;
+        border-radius: var(--border-radius-md);
+        outline: none !important;
+        border: none !important;
+        background-color: transparent !important;
+    }
+    &__label {
+        position: absolute;
+        left: 0.75rem;
+        top: 0.7rem;
+        overflow: hidden;
+        pointer-events: none;
+        color: #fff;
+        font-size: 14px;
+        max-width: 100%;
+        // transition: color 250ms ease-in-out, padding 250ms ease-in-out,
+        //   font-size 250ms ease-in-out, top 250ms ease-in-out,
+        //   background 250ms ease-in-out, font-weight 250ms ease-in-out;
+        .text-field__input:-webkit-autofill+& {
+            background-color: transparent !important;
+            border-radius: var(--border-radius-md);
+        }
+        .text-field__input:-webkit-autofill+&,
+        &.active {
+            display: none;
+            // padding: 0.5rem 0.5rem;
+            // font-size: 12px;
+            // font-weight: 500;
+            // top: -0.5rem;
+            // background: #fff;
+        }
+    }
+}

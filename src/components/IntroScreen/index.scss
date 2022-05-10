@@ -1,0 +1,32 @@
+.introWrapper {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+//   max-width: 919px;
+margin: 100px 0px ;
+}
+
+.squaredButtonsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.gameBackNavigator {
+  font: Semibold 15px/20px Segoe UI;
+  letter-spacing: 0.9px;
+  color: #297bfb;
+  align-self: flex-start;
+}
+
+.aiOptionsWrapper{ 
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 919px;
+}

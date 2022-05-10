@@ -1,0 +1,142 @@
+.claimButton {
+    background: linear-gradient( 180deg, #dd962b 19.44%, #e39c2d 23.36%, #7e300f 49.18%, #dea85e 79.17%);
+    border-radius: 15px;
+    font-family: Solway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 22px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .claimButton {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .claimButton {
+        font-size: 10px;
+    }
+}
+
+.treasureHunt {
+    height: calc(100vh * (1300 / 1920)) !important;
+    & div[data-squareId] div {
+        transition: all 0.5s ease;
+    }
+    & .animating.animating-digging {
+        // animation: treasureFound 1.5s ease;
+        animation: noTreasure 0.5s ease;
+        animation-fill-mode: forwards;
+    }
+    & .animating.animating-treasure {
+        animation: treasureFound 1.5s ease;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes noTreasure {
+    50% {
+        background: crimson;
+    }
+    100% {
+        background: url("assets/images/crackedImage.jpg");
+    }
+}
+
+@keyframes treasureFound {
+    30% {
+        background: #44bd32;
+    }
+    45% {
+        background: black;
+    }
+    55% {
+        background: #44bd32;
+    }
+    90% {
+        background: black;
+    }
+    100% {
+        background: url("assets/images/crackedImage.jpg");
+    }
+}
+
+.treasureQuestMoves {
+    max-width: 25vmax !important;
+    width: fit-content !important;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #0c1221;
+    box-shadow: 4px 0px 30px #283d61b3, 0px 4px 30px #20314fb3;
+    .title {
+        font-family: Solway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #cca66b;
+        padding: 2vmin 3vmax
+      }
+      .moveHistoryWrapper {
+        flex: 1;
+        overflow-y: auto;
+        p {
+          padding: 2vmin 2vmax;
+          text-align: left;
+          font-weight: bold;
+          font-size: 1.3rem;
+          letter-spacing: 0.32px;
+          color: #0f1f38;
+          opacity: 1;
+        }
+        .cellWrapper {
+          height: 40vmin;
+          // overflow-y: scroll;
+          .moveHistoryCell {
+            width: 100%;
+            opacity: 1;
+            p {
+              padding: 14px 0 14px 35px;
+              text-align: left;
+              font-size: 1rem;
+              letter-spacing: 0.26px;
+              opacity: 1;
+            }
+          }
+          .moveHistoryCellOdd {
+            background: transparent;
+            p {
+              color: #cca66b;
+            }
+          }
+          .moveHistoryCellEven {
+            background: #cca66b;
+            p {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    // margin-right: ;
+}
+
+@media only screen and (max-width: 430px) {
+    .treasureQuestMoves {
+        order: 6 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .treasureHunt {
+        margin-bottom: 4vmax;
+    }
+}

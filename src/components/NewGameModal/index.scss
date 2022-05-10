@@ -1,0 +1,288 @@
+.newGame {
+  padding: 76px 64px 46px 52px;
+  width: 733px;
+  text-align: center;
+  background: #0c1221;
+  position: relative;
+  h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+    color: #cca66b;
+    font-size: 30px;
+  }
+
+  .headerRow {
+    display: flex;
+    justify-content: center;
+    // padding-top: 34px;
+    .switch {
+      padding-left: 16px;
+    }
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    .item {
+      padding-top: 50px;
+      h5 {
+        color: #ffffff;
+        font-size: 22px;
+        text-transform: uppercase;
+      }
+      .sideItems {
+        padding-top: 24px;
+        display: flex;
+        width: 265px;
+        justify-content: space-between;
+        & > div {
+          width: 61px;
+          cursor: pointer;
+        }
+        &.dropdownItem {
+          position: relative;
+          padding-top: 15px;
+          &::after {
+            background: url("assets/images/Vector.svg");
+            background-repeat: no-repeat;
+            position: absolute;
+            content: "";
+            top: 30px;
+            right: 70px;
+            height: 10px;
+            width: 15px;
+          }
+          select {
+            border: 2px solid #cca66a;
+            background: none;
+            color: #ffffff;
+            text-transform: uppercase;
+            border-radius: 5px;
+            opacity: 1;
+            font-size: 15px;
+            width: 205px;
+            height: 37px;
+            padding-left: 10px;
+            cursor: pointer;
+            appearance: none;
+            option {
+              color: #cca66a;
+              padding-top: 5px;
+              &:hover {
+                background-color: #cca66a;
+                color: #ffffff;
+              }
+            }
+          }
+        }
+        &.sides {
+          justify-content: flex-start;
+          > div {
+            border-radius: 8px;
+            margin-right: 20px;
+            width: 68px;
+            height: 68px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              height: 40px;
+            }
+          }
+          .side {
+          }
+          .sideClicked {
+            border: 2px solid #cca66a;
+          }
+        }
+        .inBetween {
+          border: none;
+          color: #ffffff;
+          min-width: 65px;
+        }
+        input {
+          border: 2px solid #cca66b;
+          border-radius: 8px;
+          opacity: 1;
+          font-size: 15px;
+          width: 56px;
+          height: 32px;
+          text-align: center;
+          background: none;
+          color: #ffffff;
+        }
+      }
+      .timeAndIncrementTitle {
+        padding-top: 0px;
+      }
+      .inputValue {
+        width: 166px;
+        align-items: center;
+      }
+    }
+  }
+
+  .createGame {
+    margin-top: 50px;
+    button {
+      font-size: 20px;
+      padding: 14px 20px;
+    }
+  }
+}
+
+h5 {
+  text-align: left;
+  font-size: 1.1rem;
+  letter-spacing: 1.2px;
+  color: #0f1f38;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .newGame {
+    padding: 10px !important;
+  }
+  .row {
+    justify-content: center !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  .newGame {
+    padding: 10px !important;
+  }
+  .row {
+    flex-direction: column !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .newGame {
+    width: auto;
+    padding: 20px;
+    .row .item {
+      padding-top: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .newGame {
+    width: auto;
+    .row {
+      flex-direction: column;
+      align-items: center;
+      .item.no-content {
+        display: none;
+      }
+    }
+    .createGame button {
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .newGame {
+    .headerRow h3 {
+      font-size: 24px;
+    }
+    .row .item {
+      padding-top: 40px;
+      h5 {
+        font-size: 18px;
+      }
+      .sideItems.sides > div {
+        width: 45px;
+        height: 45px;
+        img {
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+.warFrontWrapperContainer {
+  .newGame {
+    background: url("./assets/images/warfront/game-setup/background.png");
+    background-size: 100% 100%;
+    width: 600px;
+    h3 {
+      background-image: linear-gradient(#dd962b 0%, #ffe46e 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &.sides {
+      justify-content: flex-start;
+      > div {
+        border-radius: 8px;
+        margin-right: 20px;
+        width: 68px;
+        height: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 40px;
+        }
+      }
+    }
+    .side {
+      background: url("assets/images/warfront/game-setup/select-active.png");
+      background-size: 100% 100%;
+      border: none !important;
+    }
+    .sideClicked {
+      // border: 2px solid #cca66a;
+      background: url("assets/images/warfront/game-setup/select.png");
+      background-size: 100% 100%;
+      border: none !important;
+    } 
+    input {
+      background: url("assets/images/warfront/game-setup/mode.png") !important;
+      background-size: 100% 100% !important;
+      border: none !important;
+      border-radius: 8px;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+    select {
+      background: url("assets/images/warfront/game-setup/input.png") !important;
+      background-size: 100% 100% !important;
+      border: none !important;
+      color: #ffffff;
+      text-transform: uppercase;
+      cursor: pointer;
+      appearance: none;
+      &:focus-visible {
+        border: none;
+        outline: none;
+      }
+    }
+    .createGame {
+      margin-top: 50px;
+      button {
+        font-size: 20px;
+        padding: 14px 20px;
+        background: url("assets/images/warfront/game-setup/button.png") !important;
+        background-size: 100% 100% !important;
+      }
+    }
+  }
+}
+
+.newGame__toast{
+  width: 500px;
+  left: 10px;
+  cursor: auto !important;
+  p,button{
+    color: white
+  }
+  .gameCodeTitle{
+    margin: 2px;
+    color:#dd962b;
+  }
+}

@@ -1,0 +1,47 @@
+.buttonWrapper {
+  background: linear-gradient(
+    180deg,
+    #dd962b 19.44%,
+    #e39c2d 23.36%,
+    #7e300f 49.18%,
+    #dea85e 79.17%
+  );
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 57px;
+  font-family: Solway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Solway;
+
+  &.dark {
+    background: #cca66a;
+  }
+  &.small {
+    padding: 6px 15px;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  &.white {
+    background: none;
+    color: #fff;
+    border: 2px solid #cca66a;
+  }
+}
+
+.outlinedButton {
+  padding: 10px 16px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 2px solid #0f1f38;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1.26px;
+  color: #0f1f38;
+  cursor: pointer;
+}

@@ -1,0 +1,139 @@
+.quick-pairing-modal {
+  padding: 40px 30px 8px;
+  width: auto;
+  text-align: center;
+  background: #0c1221;
+  position: relative;
+  h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+    color: #cca66b;
+    font-size: 30px;
+  }
+
+  .headerRow {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+  .row {
+    display: flex;
+    .box {
+      width: 135px;
+      height: 85px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: 2px solid #cca66a;
+      background: rgba(255, 255, 255, 0.1);
+      margin-right: 15px;
+      margin-bottom: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        background: #cca66a;
+      }
+      &.lg {
+        width: 289px;
+      }
+      p {
+        color: #ffffff;
+        font-size: 14px;
+        text-transform: uppercase;
+        &:first-child {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .quick-box{
+   cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .quick-pairing-modal {
+    .headerRow h3 {
+      font-size: 24px;
+    }
+    .row .box {
+      height: 100px;
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .quick-pairing-modal {
+    padding: 40px 15px 10px;
+    .row {
+      flex-direction: row !important;
+      .box {
+        height: 80px;
+        p {
+          font-size: 12px;
+          &:first-child {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.warFrontWrapperContainer {
+  .quick-pairing-modal {
+    background: url("./assets/images/warfront/pairingbackground.png");
+    background-size: 100% 100%;
+    h3 {
+      letter-spacing: 1.62px;
+      text-transform: uppercase;
+      font-size: 36px;
+      background-image: linear-gradient(#dd962b 0%, #ffe46e 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .row {
+      display: flex;
+      justify-content: center;
+      .box {
+        background: url("./assets/images/warfront/paring.png");
+        background-size: 100% 100%;
+        width: 135px;
+        height: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover {
+          background: url("./assets/images/warfront/paring-active.png");
+          background-size: 100% 100%;
+        }
+        &.lg {
+          width: 289px;
+        }
+        p {
+          color: #ffffff;
+          font-size: 14px;
+          text-transform: uppercase;
+          &:first-child {
+            margin-bottom: 10px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

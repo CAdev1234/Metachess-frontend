@@ -1,0 +1,55 @@
+.spectators-display-section {
+  position: relative;
+  height: 2vmax;
+  position: fixed;
+  bottom: 8vmin;
+  right: 8vmin;
+  border-radius: 8px;
+  border: 2px solid #dd962b;
+  overflow: hidden;
+  z-index: 1;
+  &.showUsers {
+    overflow: initial;
+  }
+  .eye-container-spectators {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    .spectators-number {
+      font-weight: 900;
+      padding: 2px;
+      font-size: 22px;
+      // color: #000;
+      color: #964b01;
+    }
+  }
+  .spectator-user-list-display {
+    position: absolute;
+    top: 5%;
+    left: -100%;
+    padding: 1vmin 2vmin;
+    border-radius: 8px;
+    border: 2px solid #dd962b;
+    box-sizing: border-box;
+    transform: translateX(-60%);
+    width: 20vmin;
+    height: 12vmin;
+    overflow: auto;
+    background-color: grey;
+    color: #fff;
+    .spectator-user-display {
+      width: 100%;
+      font-size: 12px;
+      font-weight: 900;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.footerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #0F1F38 0% 0% no-repeat padding-box;
+    width: 100%;
+    min-height: 267px;
+
+    clear: both;
+
+}
+
+.footerText {
+    font: 19px/26px Segoe UI;
+    letter-spacing: 0.28px;
+    color: #FFFFFF;
+}

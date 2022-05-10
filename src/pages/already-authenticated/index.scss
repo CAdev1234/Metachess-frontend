@@ -1,0 +1,29 @@
+.accessDenied {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 4vmax;
+    align-items: center;
+    flex-direction: column;
+    & img {
+        width: 40%;
+    }
+    & .headerWrapper {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        .header-heading {
+            text-align: center;
+            font-family: Solway;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 45px;
+            line-height: 5vmax;
+            text-transform: uppercase;
+            background-image: linear-gradient( #dd962b 0%, #e39c2d 6.56%, #7e300f 49.79%, #dea85e 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}

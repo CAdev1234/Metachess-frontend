@@ -1,0 +1,85 @@
+.choseModeSectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    & .headerWrapper {
+        margin-top: 30px;
+        margin-bottom: 75px;
+        display: flex;
+        justify-content: center;
+        .header-heading {
+            font-family: Solway;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 54px;
+            line-height: 40px;
+            text-transform: uppercase;
+            background-image: linear-gradient( #dd962b 0%, #e39c2d 6.56%, #7e300f 49.79%, #dea85e 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    & .squaredWrapper {
+        display: flex;
+        & .bottomAlign {
+            & .header-heading-title {
+                font-family: Solway;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 8rem;
+                line-height: 40px;
+                /* text-align: center; */
+                height: 100%;
+                text-transform: uppercase;
+                background-image: linear-gradient( #dd962b 0%, #e39c2d 6.56%, #7e300f 49.79%, #dea85e 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                /* vertical-align: middle; */
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .squaredWrapper {
+        display: block !important;
+    }
+    .header-heading {
+        font-size: 40px !important;
+    }
+    .squareButtonContainer {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .squaredWrapper {
+        display: block !important;
+    }
+    .squareButtonContainer {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header-heading {
+        font-size: 30px !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header-heading {
+        font-size: 26px !important;
+    }
+}
+
+.no-cursor {
+    cursor: not-allowed;
+}

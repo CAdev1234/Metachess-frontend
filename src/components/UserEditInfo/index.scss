@@ -1,0 +1,70 @@
+.Form-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* height: 100%; */
+    align-self: center;
+    .Form-wrapper {
+        width: 100%;
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        .Lables {
+            font-size: 16px;
+            font-weight: bolder;
+        }
+    }
+}
+
+.avatarLabel {
+    width: 100%;
+    padding: 2vmin 2vmax;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 450px) {
+    .avatarLabel {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .avatarLabel {
+        font-size: 12px;
+    }
+}
+
+.formWrapper {
+    display: flex;
+    justify-content: center;
+    .form-check {
+        position: relative;
+        right: 8rem;
+        margin: 2rem 0rem;
+        @media screen and (max-width: 550px) {
+            font-size: 12px;
+            right: 6rem;
+        }
+        @media screen and (max-width: 480px) {
+            right: 5.1rem;
+        }
+        @media screen and (max-width: 430px) {
+            right: 4rem;
+        }
+        @media screen and (max-width: 375px) {
+            right: 3.5rem;
+        }
+        .form-check-input {
+            border: 1px solid rgba(163, 125, 36, 0.67);
+            cursor: pointer !important;
+        }
+        .form-check-label {
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+}

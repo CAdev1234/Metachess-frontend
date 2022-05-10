@@ -1,0 +1,34 @@
+.backgroundImages {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-color: #0c1221;
+  > * {
+    position: absolute;
+    z-index: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    width: 124px;
+  }
+  .rookbg {
+    top: 0;
+    background-image: url("assets/images/RookBg.png");
+  }
+  .horsebg {
+    top: 397px;
+    right: 0;
+    width: 84px;
+    background-image: url("assets/images/HorseBg.png");
+  }
+  .kingbg {
+    left: 514.6px;
+    top: 805.13px;
+    background-image: url("assets/images/KingBg.png");
+  }
+}

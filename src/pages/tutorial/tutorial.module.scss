@@ -1,0 +1,162 @@
+.main {
+  display: grid;
+  grid-template-columns: 3fr 5fr 4fr;
+  grid-column-gap: 2%;
+  grid-template-rows: 0.8fr;
+  padding: 0 50px 0 50px;
+  width: 100%;
+}
+  
+.left-panel { 
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: aliceblue;
+  background: #0c1221;
+  box-shadow: 4px 0px 30px #283d61b3, 0px 4px 30px #20314fb3;
+  color: #cca66b;
+}
+
+.center-panel { 
+  grid-area: 1 / 2 / 2 / 3;
+  background: #0c1221;
+  box-shadow: 4px 0px 30px #283d61b3, 0px 4px 30px #20314fb3;
+  height: fit-content;
+}
+
+.right-panel { 
+  grid-area: 1 / 3 / 2 / 4; 
+  background: #0c1221;
+  box-shadow: 4px 0px 30px #283d61b3, 0px 4px 30px #20314fb3;
+  color: #cca66b;
+}
+
+.table-wrapper {
+  overflow-y: auto;
+  height: 240px;
+  border-bottom: 1px solid #cca66b;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  width: 8px;
+  background: #e9f38a;
+}
+
+/* Track */
+.table-wrapper::-webkit-scrollbar-track {
+  background: #0c1221; 
+}
+ 
+/* Handle */
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #cca66b;
+}
+
+/* Handle on hover */
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #cca66b;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.game-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 230px;
+  color: #cca66b;
+}
+
+.game-state div p {
+  color: #cca66b;
+  font-weight: 400;
+}
+
+.table tbody tr td {
+  padding: 10px;
+}
+
+.table tbody tr td:nth-child(1) {
+  width: 38px;
+  text-align: center;
+  border-right: 1px solid #cca66b;
+}
+
+.game-info {
+  padding: 20px;
+}
+
+.game-info p {
+  color: #cca66b;
+}
+
+.game-state .wrong p {
+  color: red;
+}
+
+.game-state .wrong :nth-child(3) {
+  margin-top: 30px;
+}
+
+.game-state .wrong :nth-child(3) button {
+  color: white;
+  border: 1px solid green;
+  padding: 5px;
+  background-color: green;
+}
+
+.game-state .wrong :nth-child(3) :hover {
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+.game-state .success p {
+  color: green;
+}
+
+.game-state .success :nth-child(2) {
+  color: white;
+  border: 1px solid green;
+  padding: 5px;
+  background-color: green;
+}
+
+.game-state .success :nth-child(2):hover {
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1024px)   {
+  .main {
+    display: grid;
+    grid-template-columns: 8fr 6fr;
+    grid-template-rows: 1fr 0.2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+    
+  .right-panel { grid-area: 1 / 2 / 2 / 3; }
+  .center-panel { grid-area: 1 / 1 / 2 / 2; }
+  .left-panel { grid-area: 2 / 1 / 3 / 3; }
+}
+
+@media only screen and (max-width: 768px)   {
+  .main {
+    display: grid;
+    grid-template-columns: minmax(300px, 768px);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+    padding: 0 10px 0 10px;
+  }
+    
+  .right-panel { grid-area: 2 / 1 / 3 / 2; }
+  .center-panel { grid-area: 1 / 1 / 2 / 1; }
+  .left-panel { grid-area: 3 / 1 / 4 / 2; }
+
+  .table-wrapper {
+    display: none;
+  }
+}
